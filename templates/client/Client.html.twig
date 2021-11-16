@@ -1,0 +1,18 @@
+
+<h1>Liste des voitures</h1>
+<table border="1">
+    <tr>
+        <td>CIN</td>
+        <td>Nom</td>
+        <td>Prenom</td>
+        <td>Adresse</td>
+    </tr>
+    {% for V in client %}
+        <tr>
+            <td>{{ V.Cin }}</td>
+            <td>{{ V.Nom }}</td>
+            <td>{{ V.Prenom }}</td>
+            <td>{{ V.Adresse }}</td>
+        </tr>
+    {% endfor %}
+</table>Voiture

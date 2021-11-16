@@ -1,0 +1,18 @@
+
+<h1>Location</h1>
+<table border="1">
+    <tr>
+        <td>date debut</td>
+        <td>date retour</td>
+        <td>prix jour</td>
+        <td>prix</td>
+    </tr>
+    {% for V in Location %}
+        <tr>
+            <td>{{ V.dateDebut|date }}</td>
+            <td>{{ V.dateRetour | date }}</td>
+            <td>{{ V.prixJour }}</td>
+            <td>{{ V.prix }}</td>
+        </tr>
+    {% endfor %}
+</table>
